@@ -1,0 +1,61 @@
+h2{
+    color:blueviolet;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+p{
+    color:cadetblue;
+    background-color: chartreuse;
+    text-align: center;
+}
+body{
+    /* evethough body generally has a background color if we gave inline css for some specific tag that color will appear not this because priority is 1st given to inline next only external  */
+    background-color: gold !important;
+    /* for example if there is 3 body and the last color will be fixed but if i give important that takes the important  this is applicable for all tags not only for color any tags*/
+}
+
+/* to give the css for the id we start with # */
+#sep{ 
+    text-justify: auto;
+}
+
+/*universal css*/
+*{  
+    background-color: brown;
+}
+
+
+h2,h1,p{ /*grouped css*/
+   color: darkorange;
+}
+
+#i1{
+    color: aliceblue;
+}
+
+#i2{
+    color: crimson;
+}
+
+.myclass h2
+{
+    background-color: blue;
+    color: black;
+}
+/* just to understand background color undersatnding of rgb and rgba */
+/* rgb inside we give random number but only 3 then color box appear then we can adjust the color on our need */
+h1
+{
+    background-color: rgb(75, 122, 80);
+    /* (75, 122, 80); we can convert this 3 value in rgb to hexadecimal convertor then it will give one hexadecimal #CCABF like this which is equivalent color of that rgb */
+}
+/* rgba inisde we can give 3 numbers and last value between 0 and 1 which determines the opacity of the color */
+h2
+{
+    background-color: rgba(225, 200, 219, 0.8);
+}
+/* these are the type of selectors
+universal selectors
+group selectors
+id selectors
+class selectors */
