@@ -276,3 +276,47 @@ arr3=arr1.concat(array);
 console.log(arr3);
 newarray=[...arr3];//... this is teh spread opertor used to copy the array
 console.log(newarray);
+arr8=[1,2,3,4];
+arr9=[5,6,7,8];
+let arr10=[...arr8,...arr9];
+console.log(arr10);
+
+let ad=[1,2,3,4,5];
+let ans=arr1.map((val)=>val*2);
+console.log(ans);
+let evenum=ad.filter((val)=>val%2==0);
+console.log(evenum);
+let totalsum=ad.reduce((acc,val)=>acc+val,0);
+console.log(totalsum);
+
+//Objects
+User={
+    username:"Dhurshitha",
+    Age:20,
+    city:"Erode",
+    Login()//here we dont want to declare as function Login()
+    {
+        console.log("You are logged in", User.username);
+    },
+    Logout:function(){
+        console.log("Logout");
+    },
+    User2:{
+        username:"Arha",
+        Age:"20"
+    }
+}
+console.log(User);
+console.log(User.username);
+User.city="Coimbatore";
+console.log(User);
+User.Login();
+
+//dom
+function changeTitle()
+{
+    let h1=document.getElementById('h1');
+    h1.innerHTML="thanks for visit"
+    console.log(h1);
+}
+changeTitle();
